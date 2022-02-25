@@ -1,0 +1,108 @@
+1.HOME:
+(eta folder korinai apatoto)
+	1.4 ta html:
+        	1.adminlogin.html
+        	2.employeeLogin
+        	3.index.html(etai main home)
+        	4.notLoggedIn.html
+    2.1 ta images folder
+    3.1 css(style.css)
+    4.1 ta js fille(SmoothScroll.js)
+2.ADMIN:
+(ei folder e css, img, js, lib, scss likha folder gulay vuleo haat dibina)
+4 ta html:
+    1.adminDashboard.html:
+        #sidebar:
+            admin name print er jnno form:
+            <form method="POST" id="Adminname">
+        #admin details table
+            1.table print er jnno:
+            <form action="/adminDetails" method="POST">
+            (2 ta column table e, loop chalay fieldname ar value print dibi)
+            2.Edit information:
+            ei part ta extra na rakhleo paros jodi edit na krte chas, edit krte chaile employee list er edit er moto
+    
+    2.addEmployee.html:
+        # main site:
+            employee list print er jnno:
+            <form action="/adduser" method="POST" id="update_user" >
+            details:
+                1. id print:
+                <input type="text" class="form-control" id="inputID" name="ID" placeholder="UserID">
+                2.jobType:
+                <input type="text" class="form-control" id="inputJobType" name="jobType" placeholder="Job Type">
+                3.Name:
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
+                4.Date of Birth:
+                <input type="datetime-local" class="form-control" id="inputDateOfBirth" name="dob" placeholder="Date-of-Birth">
+                5. gender(radio form e)
+                <input type="radio" id="radio-2" name="gender" value="Male" >
+                <input type="radio" id="radio-3" name="gender" value="Female" >
+                6.Hire DATE:
+                <input type="datetime-local" class="form-control" id="inputHireDate" name="hireDate" placeholder="Hire-Date">
+                7.Salary:
+                <input type="text" class="form-control" id="inputSalary" name="salary" placeholder="Salary">
+                8.Password:
+                <input type="text" class="form-control" id="inputPassword" name="password" placeholder="Password">
+
+
+    3.adminView.html(mainly etay employee list print edit delete):
+        # main site:
+            list print er jnno:
+            <form action="/editUser" method="POST">
+    
+    4.makeschedule.html:
+        # sidebar(ekhanei mainly schedule set):
+            1.doctor schedule:
+            <form action="/doctorschedule" method="POST">
+                details:
+                1. id input:
+                <input type="text" class="form-control" id="id" name="id" required id="id">
+                2.schedule type:
+                <input class="form-check-input" type="radio" name="scheduletype" id="exampleRadios1" value="SURGERY" checked>
+                (emon aro 2 ta sobar name ="scheduletype")
+                3.date selection:
+                <input type="date" class="form-control" id="date" name="date" required id="date">
+                (#input type kintu date disi , not datetime-local)
+                4.start time:
+                <input type="time" class="form-control" id="starttime" name="starttime" required id="starttime">
+                5. end time:
+                <input type="time" class="form-control" id="endtime" name="endtime" required id="endtime">
+        
+            2.nurse schedule:
+            <form action="/nurseschedule" method="POST">
+            details:
+                1.nurse id:
+                <input type="text" class="form-control" id="id" name="id" required id="id">
+                2.schedule type:
+                <input class="form-check-input" type="radio" name="scheduletype" id="exampleRadios1" value="SURGERY" checked>
+                3.date:
+                <input type="date" class="form-control" id="date" name="date" required id="date">
+                4.start time:
+                <input type="time" class="form-control" id="starttime" name="starttime" required id="starttime">
+                5. end time:
+                 <input type="time" class="form-control" id="endtime" name="endtime" required id="endtime">
+
+            3.others schedule:
+            <form action="/othersschedule" method="POST">
+            details:
+                1. id:
+                <input type="text" class="form-control" id="id" name="id" required id="id">
+                2.job type:
+                <input class="form-check-input" type="radio" name="jobtype" id="exampleRadios1" value="RECEPTIONIST" checked>
+                3.date:
+                <input type="date" class="form-control" id="date" name="date" required id="date">
+                4.start time:
+                <input type="time" class="form-control" id="starttime" name="starttime" required id="starttime">
+                5. end time:
+                <input type="time" class="form-control" id="endtime" name="endtime" required id="endtime">
+        
+        # schedule details( ekhane mainly schedule table ta print hobe):
+        <form action="/schedule" method="POST">
+        (edit/delete option rakhsi na lagle del kore dis)
+
+
+
+
+
+

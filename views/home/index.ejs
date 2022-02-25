@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head >
+<title>Hospital-Management Website</title>
+<link rel="stylesheet" type="text/css" href="home/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	   <h2 class="text-light"><i class="fa fa-tasks me-2"></i>MEDIAC</h2>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="#top"><i class="fa fa-home" aria-hidden="true"></i> HOME </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#services">SERVICES</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about-us"><i class="fa fa-id-badge" aria-hidden="true"></i> ABOUT US</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <!--<a class="nav-link" href="#">MAKE AN APPOINTMENT</a>-->
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+	          MAKE AN APPOINTMENT
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item text-dark" href="/patient-login">  LOG IN TO CONTINUE  </a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item text-dark" href="/patientsignup">
+	          	<P>DON'T HAVE AN ACCOUNT?</P>
+	          	<p>SIGN UP</p>
+	          </a>
+	      </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+	          LOG IN
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item text-dark" href="/employee-login">EMPLOYEE</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item text-dark" href="/patient-login">PATIENT</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact-us"><i class="fa fa-user-o" aria-hidden="true"></i> CONTACT US</a>
+	      </li>
+	    </ul>
+	    <!------<form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>---->
+	  </div>
+	</nav>
+	
+</section>
+
+<!------------------banner section------------------->
+<section id="banner">
+<div class="container text-light">
+<div class="row">
+<div class="col-md-6">
+<h1 class="promo-title">MEDIAC</h1>
+<h2>HEATH CARE FOR WHOLE FAMILY</h2>
+<p>Clinical excellence must be the priority for any health care service provider.MEDIAC ensures the best healthcare service comprise of professional service excellence with outstanding personal service.</p>
+	
+</div>
+<div class="col-md-6 text-center">
+	<img src="images/home4-removebg-preview.png" class="img-fluid">
+	
+</div>
+	
+</div>
+	
+</div>
+
+<img src="images/wave1.png" class="bottom-img">
+	
+</section>
+
+
+<!---------------services section-------------->
+
+<section id="services">
+<div class="container text-center">
+<h1 class="title">WHY CHOOSE US</h1>
+	<div class="row text-center">
+		<div class="col-md-4 services">
+		<img src="images/eyecare1-removebg-preview.png" class="service-img">
+		<h4>Eye Care</h4>
+		<p>We offer a full service eye care provider with top eye doctors throughout Bangladesh!</p>
+		</div>
+		<div class="col-md-4 services">
+		<img src="images/physicalCare-removebg-preview.png" class="service-img">
+		<h4>Physical Care</h4>
+		<p>The specialist doctors here ensure the best healthcare service with physical care provider. </p>
+		</div>
+		<div class="col-md-4 services">
+		<img src="images/dentalCare-removebg-preview.png" class="service-img">
+		<h4>Dental Care</h4>
+		<p>With the promise and commitment in dental care, we provide the best dentists throughout the country! </p>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-4 services">
+		<img src="images/diagnostictest-removebg-preview.png" class="service-img">
+		<h4>Diagnostic Test</h4>
+		<p>We are committed to provide affordable services, without any compromise on the quality of service.</p>
+		</div>
+		<div class="col-md-4 services">
+		<img src="images/surgery-removebg-preview.png" class="service-img">
+		<h4>Surgery Service</h4>
+		<p>The specialist doctors here ensure the best healthcare service with physical care provider. </p>
+		</div>
+		<div class="col-md-4 services">
+		<img src="images/emergencycare2-removebg-preview.png" class="service-img">
+		<h4>Emergency Care</h4>
+		<p>The emergency department provides service 24 hours a day and 7 days a week.In case of any emergency, call +880 191 400 1234 </p>
+		</div>
+	</div>
+</div>	
+</section>
+
+
+
+
+
+<!------------------about us------------------>
+<section id="about-us">
+<div class="container">
+<h1 class="title text-center">ABOUT US</h1>
+<div class="row text-center">
+<div class="col-md-6 about-us">
+	<p style="font-size: 20px;">Mediac is a tertiary care hospital and the leading contributor of private healthcare services in Bangladesh. This has been achieved only through consistent commitment to improve the lives of people through utmost service excellence since its inception on 5th November, 2006.The reputation of Mediac is the result of quality clinical outcome and comprehensive care, made achievable through world class integrated healthcare facilities by highly trained professionals. Thus, we strive to meet patients’ standards through quality healthcare and making a difference in their lives.</p>
+</div>
+<div class="col=col-md-6">
+	<img src="images/hospitalManage.png-removebg-preview.png" class="img-fluid">
+	
+</div>
+	
+</div>	
+</div>
+	
+</section>
+
+
+<!--------Contact us-------->
+<section id="contact-us">
+<div class="container">
+<h1 class="title text-center">CONTACT US</h1>
+<div class="row text-center">
+<div class="col-md-6 contact">
+	<p><i class="fa fa-map-marker"></i> Mediac Healthcare Centre, Bangladesh</p>
+	<p><i class="fa fa-phone"></i> +880 191 400 1234</p>
+	<p><i class="fa fa-envelope"></i> mediacare123@gmail.com</p>
+
+</div>
+<div class="col=col-md-6">
+	<img src="images/contact.png" class="img-fluid">
+	
+</div>
+	
+</div>	
+</div>
+	
+</section>
+
+
+
+
+
+<!---------------------footer section----------->
+<section id="footer">
+<img src="images/wave2.png" class="footer-img">
+
+	<hr>
+	<p class="copyright">Website Crfted by SwarnEra</p>
+	
+</section>
+
+
+
+
+<script type="SmoothScroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"');
+</script>
+
+
+
+</body>
+</html>

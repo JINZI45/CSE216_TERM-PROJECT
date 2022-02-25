@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-----header---->
+
+<!--------------menu-bar---------->
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	   <h3 class="text-light"><i class="fa fa-tasks me-2"></i>MEDIAC</h3>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="/"><h5 style="color:white"><i class="fa fa-home me-2"></i> Home</h5> </a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>	
+</section>
+
+<!-----header---->
+<!----main site---->
+<main id="site-main" style="font-family: sans-serif;">
+	<div class="container-fluid">
+		<div class="box-nav d-flex justify-between">
+			<div class="filter">
+				<!--<a href="/admin-dash" class="=border-shadow">
+				<h5 style="color: black;">Back to Dashboard</h5>
+			</a>-->
+				<a href="/admin-view" class="=border-shadow">
+				<h5 style="color: black;">All Employees</h5>
+			</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</main>
+
+
+
+<!----main site----->
+<div class="container-fluid text-light">
+		<div class="card bg-dark">
+			  <div class="card-body">
+			  	  <h3 class="card-title text-center">Employee List</h3>
+					<form action="/adduser" method="POST" id="update_user" >
+					  <div class="container-fluid bg text-light">
+					  	<div class="new_user text-center bg" >
+					  	<div class="form-group row">
+					    	<label for="inputID3" class="col-sm-2 col-form-label"><h4>Employee ID</h4></label>
+					    	<div class="col-sm-10">
+					      	<input type="text" class="form-control" id="inputID3" name="ID" placeholder="UserID" required itemid="inputID3">
+					    	</div>
+					  	</div>
+					  	<div class="form-group row">
+						    <label for="inputJobType3" class="col-sm-2 col-form-label"><h4>Job Type</h4></label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputJobType3" name="jobType" placeholder="Job Type" required itemid="inputJobType3">
+						    </div>
+					  	</div>
+					  	<div class="form-group row">
+						    <label for="inputName3" class="col-sm-2 col-form-label"><h4>Name</h4></label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputName3" name="name" placeholder="Name" required itemid="inputName3">
+						    </div>
+					  	</div>
+					  	<div class="form-group row">
+						    <label for="inputDateOfBirth3" class="col-sm-2 col-form-label"><h4>Date-of-Birth</h4></label>
+						    <div class="col-sm-10">
+						      <input type="date" class="form-control" id="inputDateOfBirth3" name="dob" placeholder="Date-of-Birth" required id="inputDateOfBirth3">
+						    </div>
+					  	</div>
+					  <div class="form-group row">
+					            <label for="gender" class="col-sm-2 col-form-label"><h4>Gender</h4></label>
+					            <div class="radio inline col-form-label col-sm-2 pt-0">
+					                <input type="radio" id="radio-2" name="gender" value="Male" required id="gender">
+					                <label for="radio-2" class="radio-label"><h5>Male</h5></label>
+					            </div>
+					            <div class="radio inline col-form-label col-sm-2 pt-0">
+					                <input type="radio" id="radio-3" name="gender" value="Female"  required id="gender">
+					                <label for="radio-3" class="radio-label"><h5>Female</h5></label>
+					            </div>
+					        </div>
+					  <div class="form-group row">
+						    <label for="inputHireDate3" class="col-sm-2 col-form-label"><h4>Hire-Date</h4></label>
+						    <div class="col-sm-10">
+						      <input type="date" class="form-control" id="inputHireDate3" name="hireDate" placeholder="Hire-Date" required id="inputHireDate3">
+						    </div>
+					  	</div>
+					  	<div class="form-group row">
+						    <label for="inputSalary3" class="col-sm-2 col-form-label"><h4>Salary</h4></label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputSalary3" name="salary" placeholder="Salary" required id="inputSalary3">
+						    </div>
+					  	</div>
+					  	<div class="form-group row">
+						    <label for="inputPassword3" class="col-sm-2 col-form-label"><h4>Password</h4></label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputPassword3" name="password" placeholder="Password" required id ="inputPassword3">
+						    </div>
+					  	</div>
+
+					  <div class="form-group row">
+					    <div class="col-sm-10">
+					      <button type="submit" class="btn btn-danger badge-pill"><h4>Save</h4></button>
+					    </div>
+					  </div>
+					  </div>
+					  	
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+<!----main site--->
+
+</body>
+</html>

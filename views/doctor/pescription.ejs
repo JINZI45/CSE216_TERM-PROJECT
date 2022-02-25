@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-----header---->
+
+<!--------------menu-bar---------->
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	   <h3 class="text-light"><i class="fa fa-tasks me-2"></i>MEDIAC</h3>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="/"><h5 style="color:white"><i class="fa fa-home me-2"></i> Home</h5> </a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>	
+</section>
+
+<!-----header---->
+<!----main site---->
+<!----main site---->
+<main id="site-main" style="font-family: sans-serif;">
+	<div class="container-fluid">
+		<div class="box-nav d-flex justify-between">
+			<div class="filter">
+			<a href="/upcomingappointments" class="=border-shadow">
+				<h5 style="color: black;">Back to Upcoming Appointment section</h5>
+			</a>
+			
+			
+		</div>
+		</div>
+	</div>
+	
+</main>
+
+
+<!----main site----->
+<div class="container-fluid text-light">
+		<div class="card bg-dark mx-auto" style="width: 80%;margin-top: 60px;">
+			  <div class="card-body">
+			  	  <h3 class="card-title text-center">PRESCRIPTION</h3>
+					<form action="/addprescription" method="POST" id="update_prescription" >
+					  <div class="container-fluid bg-dark text-light">
+					  	<div class="new_user text-center bg-dark" >
+					  	<div class="form-group row">
+						    <label for="presID" class="col-sm-2 col-form-label"><h5>PRESCRIPTION ID</h5></label>
+						    <div class="col-sm-10">
+						      <output class="form-control text-left" id="presID" name="presID">0001</output>
+						    </div>
+					  	</div>
+
+					  	<div class="form-group row">
+						    <label for="amID" class="col-sm-2 col-form-label"><h5>APPOINTMENT ID</h5></label>
+						    <div class="col-sm-10">
+						      <output class="form-control text-left" id="amID" name="amID">0001</output>
+						    </div>
+					  	</div>
+
+					  	<div class="form-group row">
+						    <label for="date" class="col-sm-2 col-form-label"><h5>DATE</h5></label>
+						    <div class="col-sm-10">
+						      <output class="form-control text-left" id="date" name="date">01/7/2022</output>
+						    </div>
+					  	</div>
+
+
+
+					        <div class="container">
+					        	<label for="medname" style="float:left"><h5>SUGGESTED MEDICINE</h5></label>
+
+					        <div class="input-group mb-3">
+  								<div class="input-group-text">
+    								<input class="form-check-input mt-0" type="checkbox" value="backend er med name" name="medname" aria-label="Checkbox for following text input">
+  								</div>
+  								<output type="text" class="form-control" aria-label="" name="medname">medname</output>
+							</div>
+							<div class="input-group mb-3">
+  								<div class="input-group-text">
+    								<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+  								</div>
+  									<output type="text" class="form-control" aria-label="Text input with checkbox">MED2</output>
+								</div>
+
+					  		</div>
+
+					  		<div class="container">
+					        	<label for="test" style="float:left"><h5>SUGGESTED TEST</h5></label>
+
+					        <div class="input-group mb-3">
+  								<div class="input-group-text">
+    								<input class="form-check-input mt-0" type="checkbox" value="backend er med name" name="test" aria-label="Checkbox for following text input">
+  								</div>
+  								<output type="text" class="form-control" aria-label="" name="test">medname</output>
+							</div>
+
+					  		</div>
+					  <div class="form-group row">
+					    <div class="col-sm-10">
+					      
+					       <button type="submit" formaction="upcomingappointments.html" class="btn btn-success btn-block" style=" display: flex;justify-content: center;align-items: center; margin-left:90px;">
+					 
+					      	<h5 style="color:white; text-align: center;">Save </h5>
+					       </button>
+					    </div>
+					  </div>
+					  </div>
+					  	
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+<!----main site--->
+
+</html>
+</body>

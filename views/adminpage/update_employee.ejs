@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-----header---->
+
+<!--------------menu-bar---------->
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" href="#"><img src="images/mediac2.png"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="/"><h5 style="color:black; font-family: sans-serif;">Home</h5> </a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>	
+</section>
+
+<!-----header---->
+<!----main site---->
+<main id="site-main" style="font-family: sans-serif;">
+	<div class="container-fluid" style="background-image: linear-gradient(to right, #a517ba, #5f1782)">
+		<div class="box-nav d-flex justify-between">
+			<div class="filter">
+				<a href="/admin-view" class="=border-shadow">
+				<h5 style="color: black;">All Employees</h5>
+			</a>	
+			</div>
+		</div>
+		<div class="form-title text-center">
+			<h2 class="text" style="color:black;">Update Employee Info</h2>
+			<span class="text" style="color:black">Use the below form to update Info</span>
+		</div>
+		
+	</div>
+	
+</main>
+
+
+
+<!----main site----->
+<form method="POST" id="update_user" >
+  <div class="container-fluid bg text-light">
+  	<div class="new_user text-center bg" >
+  	<div class="form-group row">
+    	<label for="inputID3" class="col-sm-2 col-form-label">Employee ID</label>
+    	<div class="col-sm-10">
+      	<input type="text" class="form-control" id="inputID3" name="ID" value="<%= employee[0][0] %>" placeholder="UserID">
+    	</div>
+  	</div>
+  	<div class="form-group row">
+	    <label for="inputJobType3" class="col-sm-2 col-form-label">Job Type</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputJobType3" name="JobType" value="<%= employee[0][6] %> " placeholder="Job Type">
+	    </div>
+  	</div>
+  	<div class="form-group row">
+	    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputName3" name="Name" value="<%= employee[0][1] %>" placeholder="Name">
+	    </div>
+  	</div>
+  	<div class="form-group row">
+	    <label for="inputDateOfBirth3" class="col-sm-2 col-form-label">Date-of-Birth</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputDateOfBirth3" name="DateOfBirth" value="<%= employee[0][2] %>" placeholder="Date-of-Birth">
+	    </div>
+  	</div>
+	  <div class="form-group row">
+		<label for="gender" class="text-light col-sm-2 col-form-label">Gender</label>
+		<div class="radio inline col-form-label col-sm-2 pt-0">
+			<input type="radio" id="radio-2" name="gender" value="Male"<%= employee[0][3]=='Male'? 'checked':'' %> >
+			<label for="radio-2" class="radio-label">Male</label>
+		</div>
+		<div class="radio inline col-form-label col-sm-2 pt-0">
+			<input type="radio" id="radio-3" name="gender" value="Female"<%= employee[0][3]=='Female'? 'checked':'' %> >
+			<label for="radio-3" class="radio-label">Female</label>
+		</div>
+	</div>
+  <div class="form-group row">
+	    <label for="inputHireDate3" class="col-sm-2 col-form-label">Hire-Date</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputHireDate3" name="HireDate" value="<%= employee[0][4] %>" placeholder="Hire-Date">
+	    </div>
+  	</div>
+  	<div class="form-group row">
+	    <label for="inputSalary3" class="col-sm-2 col-form-label">Salary</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputSalary3" name="Salary" value="<%= employee[0][5] %>" placeholder="Salary">
+	    </div>
+  	</div>
+	  <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword3" name="Password" value="<%= employee[0][7] %>" placeholder="Password">
+        </div>
+      </div>
+  <!---apatoto lagbena
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+---->
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </div>
+  </div>
+  	
+  </div>
+</form>
+
+<!----main site--->
+
+</body>
+</html>
