@@ -391,7 +391,7 @@ else{
   let result1 = await connection.executeMany(sql,rows);
   
 room = await connection.execute(
-  `SELECT max(id)+1 FROM EMPLOYEE_SCHEDULE`,
+  `SELECT max(id) FROM EMPLOYEE_SCHEDULE`,
  []);
  console.log(room.rows[0][0]);
 
